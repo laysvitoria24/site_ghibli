@@ -49,28 +49,17 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 }
-
 .image-item {
-    text-align: center;
-    flex: 1 1 30%;
-    max-width: 150px;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.image {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
 .image-caption {
+    text-align: center;
     font-size: 18px;
     margin-top: 10px;
     font-family: Arial, sans-serif;
@@ -78,4 +67,7 @@ img:hover {
     border-radius: 20px;
     font-family: cursive;
 }
-
+img{
+      width: 200px;
+      height: auto;
+}
